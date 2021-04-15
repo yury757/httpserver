@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+
+<div style="align-content: center">
+
+    <h1>导航：</h1>
+    <hr/>
+
+    <p>测试纯文本显示：</p>
+    <p><a href="http://localhost:8083/hello">http://localhost:8083/hello</a></p>
+    <br/>
+
+    <p>测试404（以下连接或任何不存在的链接）：</p>
+    <p><a href="http://localhost:8083/404">http://localhost:8083/404</a></p>
+    <br/>
+
+    <p>测试下载文件（在jar包所在目录的resources目录下放置任何文件，都可以直接通过http访问，只要url设置和resources下的url一样）：</p>
+    <p><a href="http://localhost:8083/httpserver简单架构.pdf">http://localhost:8083/httpserver简单架构.pdf</a></p>
+    <br/>
+
+    <p>测试重定向：</p>
+    <p><a href="http://localhost:8083/oldUrl">http://localhost:8083/oldUrl</a></p>
+    <br/>
+
+    <p>关闭服务器，访问两次以下请求，第一次访问成功，第二次若一直在转，说明服务器成功关闭：</p>
+    <p><a href="http://localhost:8083/SHUTDOWN">http://localhost:8083/SHUTDOWN</a></p>
+    <br/>
+
+</div>
+
+</body>
+</html>
