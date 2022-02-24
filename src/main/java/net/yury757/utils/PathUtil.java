@@ -3,11 +3,12 @@ package net.yury757.utils;
 import java.util.HashMap;
 
 public class PathUtil {
-    private static String resourcesPath = "\\resources";
+    private static String resourcesPath = "/resources";
     private static String rootPath;
 
     static {
         rootPath = System.getProperty("user.dir") + resourcesPath;
+        System.out.println(rootPath);
     }
 
     public static String getRootPath(){
